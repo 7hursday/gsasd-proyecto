@@ -3,88 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Aplicación Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Proyecto GSASD</title>
     <style>
-        /* Estilos globales */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #333;
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #333;
+            --background-color: #f9f9f9;
+            --text-color: #555;
+            --heading-color: #222;
         }
 
-        /* Estilo del encabezado */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
         header {
-            background-color: #0078d4;
+            background-color: var(--primary-color);
             color: white;
-            padding: 15px 0;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px 10px;
         }
 
         header h1 {
-            font-size: 2em;
             margin: 0;
+            font-size: 2.5em;
         }
 
         header p {
             margin: 5px 0;
-            font-size: 1em;
-        }
-
-        /* Estilo principal */
-        main {
-            padding: 20px;
-        }
-
-        main h1 {
-            color: #d40000;
-            font-size: 2em;
-        }
-
-        main p {
             font-size: 1.2em;
-            margin: 10px 0;
         }
 
-        /* Estilo del pie de página */
-        footer {
-            background-color: #333;
+        nav {
+            background-color: var(--secondary-color);
             color: white;
+            text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
-            font-size: 0.9em;
         }
 
-        footer a {
-            color: #0078d4;
+        nav a {
+            color: white;
             text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
-        footer a:hover {
+        nav a:hover {
             text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: var(--heading-color);
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Trabajo GSASD</h1>
-        <p>Profesor: Domingo Ortiz Boyer</p>
-        <p>Realizado por: [Tu Nombre]</p>
+        <h1>Proyecto GSASD</h1>
+        <p>¡Bienvenidos a nuestra página!</p>
     </header>
-    <main>
-        <h1>¡Bienvenidos a mi aplicación web!</h1>
-        <p>Esta es una página web desplegada usando contenedores Docker.</p>
-        <p>Con este proyecto, mostramos cómo utilizar tecnologías modernas para facilitar el desarrollo y despliegue de aplicaciones.</p>
-    </main>
+
+    <nav>
+        <a href="#quienes-somos">¿Quiénes Somos?</a>
+        <a href="#proyecto">Nuestro Proyecto</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="quienes-somos" class="section">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un equipo apasionado por la tecnología y el desarrollo web. Nuestro objetivo es crear soluciones innovadoras y prácticas para resolver problemas reales.</p>
+        </section>
+
+        <section id="proyecto" class="section">
+            <h2>Nuestro Proyecto</h2>
+            <p>Este proyecto está diseñado para mostrar las capacidades de las tecnologías modernas y cómo pueden ser utilizadas para crear experiencias únicas y atractivas.</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!</p>
+            <p><strong>Email:</strong> contacto@gsasd.com</p>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+        </section>
+    </div>
+
     <footer>
-        <p>Desarrollado con <span style="color: red;">❤</span> por [Tu Nombre].</p>
-        <p>
-            Encuentra más proyectos en mi 
-            <a href="https://github.com/7huesday/gsasd-trabajo" target="_blank">GitHub</a>.
-        </p>
+        <p>© 2024 Proyecto GSASD. Todos los derechos reservados.</p>
+        <p>Desarrollado por Sandra Rider Gómez y Nerea María Moreno Herrera</p>
     </footer>
 </body>
 </html>
